@@ -28,21 +28,22 @@ def kmeans(data, k, max_iters=100):
     return clusters, centroids
 
 
-# Generate test data
-np.random.seed(42)
-data = np.random.randn(100, 2)
+if __name__ == '__main__':
+    # Generate test data
+    np.random.seed(42)
+    data = np.random.randn(100, 2)
 
-# Perform K-means clustering
-k = 3
-clusters, centroids = kmeans(data, k)
+    # Perform K-means clustering
+    k = 3
+    clusters, centroids = kmeans(data, k)
 
-# Visualize the results
-for i in range(k):
-    cluster_points = np.array([data[j] for j in range(len(data)) if clusters[j] == i])
-    plt.scatter(cluster_points[:, 0], cluster_points[:, 1])
+    # Visualize the results
+    for i in range(k):
+        cluster_points = np.array([data[j] for j in range(len(data)) if clusters[j] == i])
+        plt.scatter(cluster_points[:, 0], cluster_points[:, 1])
 
-plt.scatter(centroids[:, 0], centroids[:, 1], marker='x', color='red', s=100)
-plt.title('K-means Clustering')
-plt.xlabel('X')
-plt.ylabel('Y')
-plt.show()
+    plt.scatter(centroids[:, 0], centroids[:, 1], marker='x', color='red', s=100)
+    plt.title('K-means Clustering')
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.show()
