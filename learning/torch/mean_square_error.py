@@ -3,6 +3,16 @@ import torch.nn as nn
 
 
 class MeanSquareError(nn.Module):
+    """
+    Computes the mean square error between y_true and y_pred.
+
+    Arguments:
+    y_true: Tensor of true values.
+    y_pred: Tensor of predicted values.
+
+    Returns:
+    Mean square error as a scalar tensor.
+    """
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
 
