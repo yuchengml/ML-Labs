@@ -6,8 +6,8 @@ class CrossEntropy(torch.nn.Module):
     Computes the cross-entropy loss between y_true and y_pred.
 
     Arguments:
-    y_true: Tensor of true labels (probabilities).
-    y_pred: Tensor of predicted probabilities.
+    y_true: Tensor of true probabilities. Expect a probability distribution like softmax output.
+    y_pred: Tensor of predicted probabilities. Expect a probability distribution like softmax output.
 
     Returns:
     Cross-entropy loss as a scalar tensor.
