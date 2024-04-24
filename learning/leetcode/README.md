@@ -2,6 +2,10 @@
 
 ## Arrays and strings
 
+## Sliding window
+
+- [x] [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+
 ## Hashing
 
 - [x] [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
@@ -30,7 +34,7 @@
 - [ ] Count Good Nodes in Binary Tree
 - [ ] Path Sum III
 - [ ] Longest ZigZag Path in a Binary Tree
-- [ ] Lowest Common Ancestor of a Binary Tree
+- [x] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
 #### BFS
 
@@ -58,7 +62,7 @@
 
 ## Heaps
 
-- [ ] Kth Largest Element in an Array
+- [x] [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 - [ ] Smallest Number in Infinite Set
 - [ ] Maximum Subsequence Score
 - [ ] Total Cost to Hire K Workers
