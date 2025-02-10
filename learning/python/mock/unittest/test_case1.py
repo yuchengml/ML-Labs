@@ -15,3 +15,5 @@ class ClientTestCase(unittest.TestCase):
         result = client.connect()
         self.assertEqual(URL, 'http://localhost:5000')
         self.assertEqual(result, '`http://localhost:5000` connected')  # add assertion here
+
+        api_caller = ApiCaller()
