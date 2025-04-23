@@ -25,7 +25,7 @@ def serve_vllm():
         "--host",
         "127.0.0.1",
         "--port",
-        "8000"
+        "8000",
     ]
 
     # Start the vLLM server
